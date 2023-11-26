@@ -1,0 +1,193 @@
+<head>
+</head>
+<body>
+<link href="https://fonts.font.im/css?family=Sacramento" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+<style>
+			body{
+				background-color: #000000;
+				opacity: 1;
+				background-image: radial-gradient(#954252 1.1500000000000001px, #000000 1.1500000000000001px);
+				background-size: 23px 23px;
+			}
+		
+			
+			h1{
+				font-family: 'Sacramento', cursive;
+				color: #FE7696;
+				font-size: 210px;
+				margin:0;
+			}
+			
+			
+			.rose{
+				width: 500px;
+				height: 800px;
+				animation: yidon 5s infinite;
+				transform: translateY(40%);
+			}
+			
+			.petal{
+				width: 200px;
+				height: 200px;
+				background: #fe7696;
+				border-radius: 0px 50%;
+				position: absolute;
+				box-shadow: 0 0 10px #D1123F;
+				z-index: 2;
+				transform-origin: bottom right; 
+				animation: zhankai2 10s infinite;
+				
+			}
+			
+			.petal:nth-child(2){
+				transform-origin: right bottom;
+				transform: rotate(90deg);
+				background: #fe7696;
+				left: -40px;
+				animation: zhankai1 10s infinite;
+			}
+			
+			.petal:nth-child(3){
+				width: 160px;
+				height: 160px;
+				left: 40px;
+				top: -80px;
+				z-index: 1;
+				background: #f03a64;
+				transform-origin: bottom right; 
+				animation: zhankai2 10s infinite;
+			}
+			
+			.petal:nth-child(4){
+				transform: rotate(90deg);
+				width: 160px;
+				height: 160px;
+				left: 0px;
+				top: -80px;
+				z-index: 1;
+				background: #f03a64;
+				transform-origin: bottom right; 
+				animation: zhankai1 10s infinite;
+			}
+			
+			.petal:nth-child(5){
+				width: 200px;
+				height: 220px;
+				border-radius: 20px;
+				left: 80px;
+				top: -120px;
+				z-index: 0;
+				background: #d1123f;
+				
+			}
+			
+			.leaf{
+				position: absolute;
+				top: 480px;
+				left: -460px;
+			}
+			
+			.stem{
+				width: 960px;
+				height: 160px;
+				background: transparent;
+				border: 32px solid #8ac78a;
+				border-color: #77a377 transparent transparent transparent;
+				border-radius: 50% 50%;
+				transform: rotate(100deg);
+			}
+			
+			.leafs{
+				width: 200px;
+				height: 160px;
+				border-radius: 0px 50%;
+				background: #77a377;
+				position: absolute;
+				top: 0;
+				left: 400px;
+				z-index: 49;
+			}
+			
+			.leafs:nth-child(2){
+				width: 160px;
+				height: 80px;
+				top: 120px;
+				left: 570px;
+				transform: rotate(160deg);
+			}
+			
+			@keyframes yidon{
+				50%{
+					transform: translateY(35%);
+				}
+				100%{
+					transform: translateY(40%);
+				}
+			}
+			
+			@keyframes zhankai1{
+				50%{
+					transform: rotate(100deg);
+				}
+				100%{
+					transform: rotate(90deg);
+				}
+			}
+			
+			@keyframes zhankai2{
+				50%{
+					transform: rotate(-10deg);
+				}
+				100%{
+					transform: rotate(0deg);
+				}
+			}
+
+
+			.heart{
+				color: #000;
+				font-size:260px;
+				text-shadow:0 0 10px red, 0 0 50px red;
+				margin-left:30%;
+				margin-bottom:20%;
+			}
+
+			.bottom {
+				position:absolute;
+				bottom:0;
+				left:18%;
+			}
+
+			.hearttext {
+				font-size:40px;
+				font-family: 'Sacramento', cursive;
+				color: #FE7696;
+				position:absolute;
+				bottom:245px;
+				left: 40%;
+			}
+</style>
+		<div style="padding-left: 34%;">
+			<div class="rose">
+				<div class="flower">
+					<div class="petal"></div>
+					<div class="petal"></div>
+					<div class="petal"></div>
+					<div class="petal"></div>
+					<div class="petal"></div>
+				</div>
+				<div class="leaf">
+					<div class="stem"></div>
+					<div class="leafs"></div>
+					<div class="leafs"></div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+				<div class="letter">
+					<h1>I love you</h1>
+				</div>
+			<i class="fa-solid fa-heart heart"><a class="hearttext">A <i class="fa-regular fa-heart"> E</i></a></i>
+		</div>
+</body>
